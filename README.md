@@ -11,7 +11,7 @@
 
 # 개발 환경
 - Android Studio 4.1 버전
-- VS code (환경설정 셋팅용)
+- VS code (환경설정 셋팅 및 commit message 작성 용)
 - Windows 11
 - Minimun SDK : API 24
 
