@@ -16,6 +16,10 @@
 - Minimun SDK : API 24
 
 
+# 블로그
+- 배운 내용을 복습을 위해 흔적을 남깁니다.
+- [(1) [Android Studio] 사전 준비 - Android Studio 설치 및 Hello world 띄우기](https://berkley.tistory.com/16)
+
 
 # 블로그(tistory)
 - (1) 시작하기
