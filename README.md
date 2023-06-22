@@ -9,6 +9,14 @@
 - Android를 잘 다루기 위해 기본부터 다지기로 시작한다.
 
 
+# 학습 진행도
+- 혼자서 Emulator 부분은 띄울 수 있다.
+- Native 환경에서 Button 기능으로 화면 이동 가능
+- 외부 파일을 assets 디렉토리를 활용하여 불려오기 가능
+- WebView 화면을 띄울 수 있다.
+- 현재 Web상에서 Front-End 개발이 가능하므로 Web View를 이용한 개발 가능
+- Native App 기능을 이용하여 버튼 및 UI 기능 구현은 차근차근 연습 예정
+
 # 개발 환경
 - Android Studio 4.1 버전
 - VS code (환경설정 셋팅 및 commit message 작성 용)
