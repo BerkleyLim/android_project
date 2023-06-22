@@ -24,6 +24,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<!--        엣날 버전일 경우 아래 추가 -->
+<!--        <activity android:name=".MainActivity" />-->
     </application>
 
 </manifest>
