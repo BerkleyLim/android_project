@@ -11,24 +11,25 @@
   이부분은 텍스트에 띄우는 기능 역할을 합니다.
 
 -->
+    <!-- android:id 에서는 앱 기능의 id를 설정 -->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textExample"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="안녕하세요!"
+        android:text="다음 화면으로 이동합니다."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="화면 이동"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textExample" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
