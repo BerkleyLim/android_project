@@ -29,7 +29,7 @@
 - VS code (환경설정 셋팅 및 commit message 작성 용)
 - Windows 11
 - Minimun SDK : API 24
-
+<br/><br/>
 
 # 블로그(tistory)
 - 배운 내용을 복습을 위해 흔적을 남깁니다.
