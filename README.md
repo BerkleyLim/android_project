@@ -17,6 +17,12 @@
 - 현재 Web상에서 Front-End 개발이 가능하므로 Web View를 이용한 개발 가능
 - Native App 기능을 이용하여 버튼 및 UI 기능 구현은 차근차근 연습 예정
 
+# Android 대해 도와주실분 환영합니다.
+- Android Studio 사용 경험 가지고 계시는분
+- Native 환경의 대해 이해도가 높으신분
+- WebView 데이터를 Native App과 연동의 대해 이해도가 높으신분
+
+
 # 개발 환경
 - Android Studio 4.1 버전
 - VS code (환경설정 셋팅 및 commit message 작성 용)
