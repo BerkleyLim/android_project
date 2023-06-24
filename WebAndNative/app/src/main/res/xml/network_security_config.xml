@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 네트워크 보안 제한 (접근 허용 설정) -->
+<network-security-config>
+<!--        도메인 허용 되는 것, false 시 https 만 가능 -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">berkleylim.link</domain>
+    </domain-config>
+</network-security-config>
