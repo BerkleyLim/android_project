@@ -35,7 +35,8 @@ public class MainActivity2 extends AppCompatActivity {
         //웹뷰가 보여줄 웹문서 (.html) 로드하기
         //하이브리드앱은 오프라인에서도 동작해야 하므로
         //웹문서가 이 프로젝트 안에 위치해야함
-        wv.loadUrl("file:///android_asset/index.html"); //에셋 주소 : /android_asset
+//        wv.loadUrl("file:///android_asset/index.html"); //에셋 주소 : /android_asset
+        wv.loadUrl("file:///android_asset/html2canvas/index.html"); //에셋 주소 : /android_asset
     }
 
     //    뒤로가기 버튼 눌렀을 때 웹뷰의 페이지가 돌아가기 페이지가 있다면

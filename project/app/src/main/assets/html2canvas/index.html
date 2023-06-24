@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+  <div class="card card-default pb-5">
+    <div class="save_btn"><a class="hover" href='javascript:void(0);' onclick="PrintDiv($('#bar_chart2'));">이미지로 저장</a></div> //저장 div id
+    <div id="bar_chart2" > //저장 div
+      <div class="card-header justify-content-center">
+        <h2 class="text-center">현재 습도 데이터</h2>
+      </div>
+      <div class="card-body" style="height: 300px;">
+        <canvas id="bar2"></canvas>
+         <div id='customLegend_humi' class='customLegend'></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    //이미지(png)로 다운로드
+function PrintDiv(div){
+	div = div[0]
+	html2canvas(div).then(function(canvas){
+		var myImage = canvas.toDataURL();
+		downloadURI(myImage, "저장이미지이름.png") 
+	});
+}
+
+function downloadURI(uri, name){
+	var link = document.createElement("a")
+	link.download = name;
+	link.href = uri;
+	document.body.appendChild(link);
+	console.log("다운로드 전");
+	link.click();
+	console.log("다운로드 후");
+}
+  </script>
+</body>
+<script src="./html2canvas.js"></script>
+<script src="./jquery.js"></script>
+</html>
