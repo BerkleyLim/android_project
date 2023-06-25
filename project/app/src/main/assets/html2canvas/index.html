@@ -19,6 +19,18 @@
     </div>
   </div>
 
+<!--  HTMl -> 앱 호출 : 호출 방식은 IOS도 동일 -->
+<!--  스키마만 설정 시 -->
+<!--
+      something : schemaName
+      project.example.com : hostName
+-->
+  <a href="something://">Android Activity Call!!</a>
+<!--  스키마, 호스트 설정 시 -->
+  <a href="something://project.example.com">Android Activity Call!!</a>
+<!--  앱에 보낼 데이터 있을 시 -->
+  <a href="something://project.example.com?url=http://google/co.kr&data=0">Android Activity Call!!</a>
+
   <script>
     //이미지(png)로 다운로드
 function PrintDiv(div){
@@ -37,6 +49,14 @@ function downloadURI(uri, name){
 	console.log("다운로드 전");
 	link.click();
 	console.log("다운로드 후");
+}
+
+// Html/ JS ==> Android Webview
+window.sampleAndroid.sampleAction("test");
+
+// Android WebView ==> HTML / JS
+function getCall() {
+  console.log("getCall() : Android WebView ==> HTML + JS 로 전송")
 }
   </script>
 </body>

@@ -14,11 +14,22 @@
         tools:targetApi="31">
         <activity
             android:name=".MainActivity2"
-            android:exported="false" />
+            android:exported="true"> <!-- exported 를 true로 바꿈 -->
+            <intent-filter>
+<!--                웹뷰와 네이티브 통신 설정 -->
+<!--                참조 : https://machine-woong.tistory.com/451 -->
+                <action android:name="android.intent.action.VIEW" />
+                <data android:host="project.example.com" android:scheme="something" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
+<!--                아래는 처음 프로젝트부터 있었음 기본으로 생성됨 -->
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
