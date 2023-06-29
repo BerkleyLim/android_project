@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     // 버튼 정의
     Button nextButton;
+    Button nextButton2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,17 @@ public class MainActivity extends AppCompatActivity {
                 // Intent : 정보를 읽어오는 함수 (Native App)
                 // 이 기능은 다음 화면으로 이동하는 것 (MainActivity2 컴포넌트)
                 Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
+                startActivity(intent);
+            }
+        });
+
+        // activity3로 이동
+        nextButton2 = findViewById(R.id.nextButton2);
+        nextButton2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                // Intent : 정보를 읽어오는 함수 (Native App)
+                // 이 기능은 다음 화면으로 이동하는 것 (MainActivity2 컴포넌트)
+                Intent intent = new Intent(getApplicationContext(), MainActivity3.class);
                 startActivity(intent);
             }
         });
