@@ -33,6 +33,9 @@
 
 # 블로그(tistory)
 - 배운 내용을 복습을 위해 흔적을 남깁니다.
+
+<br/><br/><br/>
+<h2>v0 폴더 안</h2>
 - [(1) [Android Studio] 사전 준비 - Android Studio 설치 및 Hello world 띄우기](https://berkley.tistory.com/16)
 - [(2) [Android Studio] 버튼 바꾸고 위치까지 맞춰보기 - Android Studio 설치 및 Hello world 띄우기](https://berkley.tistory.com/17)
 - [(3) [Android Studio] 버튼 입력시 페이지 넘기고 외부파일 불려오기](https://berkley.tistory.com/18)
