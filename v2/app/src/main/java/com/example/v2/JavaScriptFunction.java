@@ -1,4 +1,4 @@
-package com.example.project;
+package com.example.v2;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,8 +17,8 @@ public class JavaScriptFunction{
     public String webViewJSTest(String string) {
         Log.i("JS 통신 : ", string);
         Toast.makeText(context, string, Toast.LENGTH_SHORT).show();
-        
-        
+
+
         return "Native Data 받기";
     }
 

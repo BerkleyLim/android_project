@@ -10,14 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f0cd36d-cae4-4627-be4d-8649063cea7d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../v1/project/app/src/main/assets/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../v1/project/app/src/main/java/com/example/project/JavaScriptFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../v1/project/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../v1/project/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../v1/project/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../v1/project/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../v1/project/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../v1/project/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../v1/project/app/src/main/java/com/example/project/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../v1/project/app/src/main/java/com/example/project/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../v1/project/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../v1/project/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
