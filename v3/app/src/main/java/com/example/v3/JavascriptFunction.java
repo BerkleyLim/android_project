@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class JavaScriptFunction{
@@ -25,10 +26,12 @@ public class JavaScriptFunction{
     @JavascriptInterface
     public void callCamera() {
         Log.i("JS 통신 : ", "성공");
-        Intent i = new Intent(context.getApplicationContext(), CameraActivity.class);
-        context.startActivity(i);
-
-
+        try {
+            Intent i = new Intent(context.getApplicationContext(), CameraActivity.class);
+            context.startActivity(i);
+        } catch (Exception e) {
+            Log.d("Camera : ", e.toString());
+        }
     }
 
 
