@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <script
-          type="text/javascript"
-          src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=i8mi8w050u&submodules=panorama"
-  ></script>
-  <title>네이버 매</title>
-</head>
-<body>
-<h2>웹뷰 환경 네이버 맵</h2>
-<div id="map" style="height:400px;"></div>
-<div id="pano" style="height:400px;"></div>
-<script src="../js/index.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <script
+            type="text/javascript"
+            src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=i8mi8w050u&submodules=panorama"
+    ></script>
+    <script src="../js/lib/jquery3.3.1.min.js"></script>
+    <title>네이버 맵</title>
+  </head>
+  <body>
+    <h2>웹뷰 환경 네이버 맵</h2>
+<!--    <div id="map" style="height:400px;"></div>-->
+<!--    <div id="pano" style="height:400px;"></div>-->
+    <div id="staticMap" style="height:400px;"></div>
+<!--    <img src="https://naveropenapi.apigw.ntruss.com/map-static/v2/raster-cors?w=300&h=300&center=127.1054221,37.3591614&level=16&X-NCP-APIGW-API-KEY-ID=i8mi8w050u">-->
+  </body>
+  <script src="../js/index.js"></script>
 </html>

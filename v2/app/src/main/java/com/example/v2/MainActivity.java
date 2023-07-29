@@ -16,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
 
         // webview 함수 호출
         WebView webView = (WebView) findViewById(R.id.webViewIndex);
+        
+        // net::ERR_CACHE_MISS 일경우
+        webView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
 
         WebSettings webSettings = webView.getSettings();
 
