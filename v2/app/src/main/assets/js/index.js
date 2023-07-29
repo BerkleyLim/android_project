@@ -1,21 +1,38 @@
-/*
-const sampleData = {이름,관련 링크,생성 일시,태그
-                    웹사이트 리뉴얼,링크를 입력하세요 →,2023년 7월 9일 오후 4:16,"UI/UX, 브랜드"
-                    3D 아트,링크를 입력하세요 →,2023년 7월 9일 오후 4:16,"3D, Blender"
-                    리브랜딩,링크를 입력하세요 →,2023년 7월 9일 오후 4:16,"마케팅, 브랜드"
-                    포스터 디자인,링크를 입력하세요 →,2023년 7월 9일 오후 4:16,"그래픽 디자인, 브랜드"}
+      var mapWidth = 37.3599605;
+      var mapHeight = 127.1058814;
 
-*/
+console.log("js 빌드 성공")
+alert("js 빌드 성공")
+//    // 지도에 표시할 위치의 위도와 경도 좌표를 파라미터로 넣어줍니다.
+//    var location = new naver.maps.LatLng(mapWidth, mapHeight);
+    var mapOptions = {
+      center: new naver.maps.LatLng(mapWidth, mapHeight),
+      zoom: 17,
+      zoomControl: true,
+      zoomControlOptions: {
+        position: naver.maps.Position.TOP_RIGHT,
+      },
+    };
+    var map = new naver.maps.Map(document.getElementById("map"), mapOptions);
+     new naver.maps.Marker({
+       position: location,
+       map,
+     });
 
+    var pano = new naver.maps.Panorama(document.getElementById("pano"), {
+      position: new naver.maps.LatLng(mapWidth, mapHeight),
+    });
 
-function sendToNative() {
-    const fileName = "../data.csv";
-    alert(fileName);
-    const nativeData = Android.webViewJSTest(fileName);
+    var marker = new naver.maps.Marker({
+      position: new naver.maps.LatLng(mapWidth, mapHeight),
+    });
 
-    const btnElement = document.getElementById("nativeBtn");
+    naver.maps.Event.addListener(pano, "init", function () {
+      marker.setMap(pano);
 
-    btnElement.innerHTML = nativeData;
-
-
-}
+      const proj = pano.getProjection();
+      const lookAtPov = proj.fromCoordToPov(marker.getPosition());
+      if (lookAtPov) {
+        pano.setPov(lookAtPov);
+      }
+    });
