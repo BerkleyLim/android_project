@@ -25,7 +25,10 @@ public class JavaScriptFunction{
     @JavascriptInterface
     public void callCamera() {
         Log.i("JS 통신 : ", "성공");
-        Intent i = new Intent();
+        Intent i = new Intent(context.getApplicationContext(), CameraActivity.class);
+        context.startActivity(i);
+
+
     }
 
 
