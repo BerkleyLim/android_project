@@ -5,6 +5,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAMERA2" />
     <uses-feature android:name="android.hardware.camera" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -27,15 +28,11 @@
         tools:targetApi="31">
         <activity
             android:name=".CameraActivity"
-            android:exported="false" />
+            android:screenOrientation="portrait"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
-
-<!--            android:screenOrientation="landscape">-->
-            <!-- configure this activity to use landscape orientation -->
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

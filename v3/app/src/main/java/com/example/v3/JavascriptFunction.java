@@ -3,6 +3,7 @@ package com.example.v3;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.hardware.Camera;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
@@ -28,7 +29,13 @@ public class JavaScriptFunction{
         Log.i("JS 통신 : ", "성공");
         try {
             Intent i = new Intent(context.getApplicationContext(), CameraActivity.class);
-            context.startActivity(i);
+//            context.startActivity(i);
+            context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA);
+            int numCams = Camera.getNumberOfCameras();
+            Log.i("camera : ", String.valueOf(numCams));
+            if (numCams > 0) {
+                Camera.open(0);
+            }
         } catch (Exception e) {
             Log.d("Camera : ", e.toString());
         }
