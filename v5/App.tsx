@@ -13,6 +13,7 @@ import Sample from './src/Sample';
 
 const store = legacy_createStore(rootReducer)
 
+// Redux 상태 관리 기법 제대로 쓰기 : https://code-masterjung.tistory.com/m/129
 function App() {
   return (
     <Provider store={store}>
